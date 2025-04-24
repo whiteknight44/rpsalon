@@ -1,149 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Salon Appointment Booking</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background: #000000;
-      font-family: 'Open Sans', sans-serif;
-      color: #ffffff;
-    }
-    h2 {
-      font-family: 'Playfair Display', serif;
-      color: #ffffff;
-    }
-    .booking-card {
-      background: #1a1a1a;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
-      color: #ffffff;
-    }
-    .btn-custom {
-      background-color: #ffffff;
-      color: #000000;
-      border: none;
-    }
-    .btn-custom:hover {
-      background-color: #25D366;
-      color: #000000;
-    }
-    label {
-      font-weight: 500;
-      color: #ffffff;
-    }
-    .form-control {
-      background-color: #333333;
-      color: #ffffff;
-      border-color: #555555;
-    }
-    .form-control::placeholder {
-      color: #aaaaaa;
-    }
-    .form-control:focus {
-      box-shadow: none;
-      border-color: #ffffff;
-      background-color: #333333;
-      color: #ffffff;
-    }
-    .text-muted {
-      color: #aaaaaa !important;
-    }
-    .form-select {
-      background-color: #333333;
-      color: #ffffff;
-      border-color: #555555;
-    }
-    .form-select:focus {
-      box-shadow: none;
-      border-color: #ffffff;
-    }
-    .form-select option {
-      background-color: #333333;
-      color: #ffffff;
-    }
-    .btn-outline-secondary {
-      color: #ffffff;
-      border-color: #ffffff;
-    }
-    .btn-outline-secondary:hover {
-      background-color: #ffffff;
-      color: #000000;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index -RP IN STYLE SALON menu </title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
-      
-  <div class="container py-5">
-    <div class="text-center mb-4">
-      <h2>Book Your Salon Appointment</h2>
-      <p class="text-muted">Choose your services and schedule easily via WhatsApp!</p>
-    </div>
 
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="p-4 booking-card">
-          <form id="appointmentForm">
-            <div class="mb-3">
-              <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-            </div>
+<body class="index-page">
 
-            <div class="mb-3">
-                <label for="phone" class="form-label">Your Phone Number</label>
-                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
-              </div>
-            <div class="mb-3">
-              <label for="services" class="form-label">Select Services</label>
-              <select class="form-select" id="services" multiple required>
-                <option value="Hair">Hair</option>
-                <option value="Facial">Facial</option>
-                <option value="Threading">Threading</option>
-                <option value="Waxing">Waxing</option>
-                <option value="Manicure">Manicure</option>
-                <option value="Pedicure">Pedicure</option>
-              </select>
-              <small class="text-muted">Hold Ctrl (Windows) or Command (Mac) to select multiple services.</small>
-            </div>
-            <div class="mb-3">
-              <label for="date" class="form-label">Appointment Date</label>
-              <input type="date" class="form-control" id="date" required>
-            </div>
-            
-            <button type="submit" class="btn btn-custom w-100">Book on WhatsApp</button>
-          </form>
+  <header id="header" class="header fixed-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          
+          
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>  +91 9906048951   </span></i>
+        </div>
+        <div class="languages d-none d-md-flex align-items-center">
+          <ul>
+            <li>En</li>
+           
+          </ul>
         </div>
       </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/logo.jpg" alt="">
+          <h1 class="sitename"> RP IN STYLE SALON Channi Himmat  </h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home<br></a></li>
+            
+            
+            <li><a href="#gallery">Gallery</a></li>
+           
+              
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+       
+
+      </div>
+
     </div>
-  </div>
 
-  <div class="text-center mt-3">
-    <a href="index.html" class="btn btn-outline-secondary">Click to Homepage</a>
-  </div>
-  <br>
-  
-  <!-- WhatsApp form handler -->
-  <script>
-    document.getElementById('appointmentForm').addEventListener('submit', function(e) {
-      e.preventDefault();
+  </header>
 
-      const name = document.getElementById('name').value;
-      const phone = document.getElementById('phone').value;
+  <main class="main">
 
-      const services = Array.from(document.getElementById('services').selectedOptions).map(option => option.value).join(', ');
-      const date = document.getElementById('date').value;
-      const message = `Hello, I would like to book a salon appointment.%0AName: ${name}%0APhone: ${phone}%0AServices: ${services}%0ADate: ${date}`;
-      
-      const whatsappURL = `https://wa.me/917051189082?text=${message}`; 
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
 
-      window.open(whatsappURL, '_blank');
-    });
-  </script>
+      <img src="assets/img/banner123.jpg" alt="" data-aos="fade-in">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 d-flex flex-column align-items-center align-items-lg-start">
+            <h2 data-aos="fade-up" data-aos-delay="100">Welcome  <span> RP IN STYLE SALON </span></h2>
+            <p data-aos="fade-up" data-aos-delay="200">          </p>
+            <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+              <a href="#why-us" class="cta-btn">Our Menu</a>
+              
+            </div>
+
+            <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+              <a href="booking.html" class="cta-btn">Booking</a>
+              
+            </div>
+          </div>
+         
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>WHY US</h2>
+        <p> Salon Menu</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="row gy-4">
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-item">
+                <img src="assets/img/haircutspa.jpg" alt="Image Description" class="img-fluid"> 
+                <h4><a href="haircutspa.html" class="stretched-link"> HAIR CUT SPA & STYLING
+
+                </a></h4>
+                <p></p>
+              </div>
+            </div><!-- Card Item -->
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-item">
+                <img src="assets/img/haircolor1.jpeg" alt="Image Description" class="img-fluid"> 
+                <h4><a href="haircolor.html" class="stretched-link"> HAIR COLOR
+
+                </a></h4>
+                <p></p>
+              </div>
+            </div><!-- Card Item -->
+          
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <img src="assets/img/skincare.jpg" alt="Image Description" class="img-fluid"> 
+              <h4><a href="skincare.html" class="stretched-link"> SKIN CARE  </a></h4>
+              <p> </p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <img src="assets/img/threadingwaxing.jpg" alt="Image Description" class="img-fluid"> 
+              <h4><a href="threadingwaxing.html" class="stretched-link"> THREADING & WAXING</a></h4>
+              <p> </p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <img src="assets/img/makeup.jpeg" alt="Image Description" class="img-fluid"> 
+              <h4><a href="makeup.html" class="stretched-link"> MAKEUP  </a></h4>
+              <p>    </p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <img src="assets/img/manicurepedicure.jpg" alt="Image Description" class="img-fluid"> 
+              <h4><a href="manicurepedicure.html" class="stretched-link">  MANICURE & PEDICURE
+
+              </a></h4>
+              <p>  </p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <img src="assets/img/bodymassage.jpg" alt="Image Description" class="img-fluid"> 
+              <h4><a href="bodymassage.html" class="stretched-link">BODY MASSAGE
+
+
+              </a></h4>
+              <p>   </p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <img src="assets/img/bridalpackages.jpg" alt="Image Description" class="img-fluid"> 
+              <h4><a href="bridalpackages.html" class="stretched-link"> BRIDAL PACKAGES </a></h4>
+              <p>   </p>
+            </div>
+          </div><!-- Card Item -->
+
+         
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+
+
+
+
+   
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <p> Some photos from Our Salon </p>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/salon1.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/image1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/salon2.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/image2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/salon3.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/image3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/salon4.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/image4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+         
+
+         
+         
+         
+
+         
+
+    
+
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    <!-- Chefs Section -->
+    <section id="chefs" class="chefs section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2></h2>
+        <p>     </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Master Chef</span>
+                </div>
+              
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Patissier</span>
+                </div>
+             
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>Cook</span>
+                </div>
+              <div class="social">
+                  
+                  <a href="https://www.facebook.com/p/Glambox-unisex-salon-100063938319767/"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/glambox_unisex_salon_jk"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.facebook.com/share/1BP8zqriin/?mibextid=wwXIfr"><i class="bi bi-google"></i></a>
+                 
+                </div>
+              
+
+
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Chefs Section -->
+
+    <!-- Contact Section -->
+   
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename"> RP IN STYLE SALON </span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>  #109, Near Shri Ram Medicos  Sec- 3,</p>
+            <p> Channi Himmat, Jammu</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 9906048951</span></p>
+            
+          </div>
+          <div class="social-links d-flex mt-4">
+           
+            <a href="https://www.instagram.com/glambox_unisex_salon_jk"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1BP8zqriin/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
+            
+            
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallary</a></li>
+            <li><a href="#"> Contact Us  </a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#"> Menu</a></li>
+           
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4></h4>
+          <p></p>
+       
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename"> RP IN STYLE SALON  </strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="whitestonetech.shop">   Whitestone Technology    </a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
