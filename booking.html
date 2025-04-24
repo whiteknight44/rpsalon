@@ -77,10 +77,12 @@
               <label for="date" class="form-label">Appointment Date</label>
               <input type="date" class="form-control" id="date" required>
             </div>
-            <div class="mb-3">
+            <!--<div class="mb-3">
               <label for="time" class="form-label">Preferred Time</label>
               <input type="time" class="form-control" id="time" required>
             </div>
+
+        -->
             <button type="submit" class="btn btn-custom w-100">Book on WhatsApp</button>
           </form>
         </div>
@@ -98,7 +100,7 @@
 
       const services = Array.from(document.getElementById('services').selectedOptions).map(option => option.value).join(', ');
       const date = document.getElementById('date').value;
-      const message = `Hello, I would like to book a salon appointment.%0AName: ${name}%0APhone: ${phone}%0AServices: ${services}%0ADate: ${date}%0ATime: ${time}`;
+      const message = `Hello, I would like to book a salon appointment.%0AName: ${name}%0APhone: ${phone}%0AServices: ${services}%0ADate: `;
 
 
       
