@@ -94,11 +94,14 @@
       e.preventDefault();
 
       const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+
       const services = Array.from(document.getElementById('services').selectedOptions).map(option => option.value).join(', ');
       const date = document.getElementById('date').value;
-      const time = document.getElementById('time').value;
+      const message = `Hello, I would like to book a salon appointment.%0AName: ${name}%0APhone: ${phone}%0AServices: ${services}%0ADate: ${date}%0ATime: ${time}`;
 
-      const message = `Hello, I would like to book a salon appointment.%0AName: ${name}%0AServices: ${services}%0ADate: ${date}%0ATime: ${time}`;
+
+      
       const whatsappURL = `https://wa.me/917051189082?text=${message}`; // Replace XXXXXXXXXX with your WhatsApp number
 
       window.open(whatsappURL, '_blank');
