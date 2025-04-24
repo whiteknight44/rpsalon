@@ -10,43 +10,72 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
-      background: #fceef5;
+      background: #ffffff;
       font-family: 'Open Sans', sans-serif;
+      color: #000000;
     }
     h2 {
       font-family: 'Playfair Display', serif;
-      color: #a52a6d;
+      color: #000000;
     }
     .booking-card {
-      background: white;
+      background: #f8f8f8;
       border-radius: 20px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      color: #000000;
     }
     .btn-custom {
-      background-color: #a52a6d;
-      color: white;
+      background-color: #000000;
+      color: #ffffff;
       border: none;
     }
     .btn-custom:hover {
       background-color: #25D366;
+      color: #ffffff;
     }
     label {
       font-weight: 500;
-      color: #333;
+      color: #000000;
+    }
+    .form-control {
+      background-color: #ffffff;
+      color: #000000;
+      border-color: #cccccc;
     }
     .form-control:focus {
       box-shadow: none;
-      border-color: #a52a6d;
+      border-color: #000000;
+      background-color: #ffffff;
+      color: #000000;
+    }
+    .text-muted {
+      color: #666666 !important;
+    }
+    .form-select {
+      background-color: #ffffff;
+      color: #000000;
+      border-color: #cccccc;
+    }
+    .form-select:focus {
+      box-shadow: none;
+      border-color: #000000;
+    }
+    .form-select option {
+      background-color: #ffffff;
+      color: #000000;
+    }
+    .btn-outline-secondary {
+      color: #000000;
+      border-color: #000000;
+    }
+    .btn-outline-secondary:hover {
+      background-color: #040404;
+      color: #ffffff;
     }
   </style>
 </head>
 <body>
-
-    <div class="text-center mt-3">
-        <a href="index.html" class="btn btn-outline-secondary">Click to Homepage</a>
-      </div>
       
-
   <div class="container py-5">
     <div class="text-center mb-4">
       <h2>Book Your Salon Appointment</h2>
@@ -82,12 +111,7 @@
               <label for="date" class="form-label">Appointment Date</label>
               <input type="date" class="form-control" id="date" required>
             </div>
-            <!--<div class="mb-3">
-              <label for="time" class="form-label">Preferred Time</label>
-              <input type="time" class="form-control" id="time" required>
-            </div>
-
-        -->
+            
             <button type="submit" class="btn btn-custom w-100">Book on WhatsApp</button>
           </form>
         </div>
@@ -98,8 +122,8 @@
   <div class="text-center mt-3">
     <a href="index.html" class="btn btn-outline-secondary">Click to Homepage</a>
   </div>
+  <br>
   
-
   <!-- WhatsApp form handler -->
   <script>
     document.getElementById('appointmentForm').addEventListener('submit', function(e) {
@@ -111,11 +135,8 @@
       const services = Array.from(document.getElementById('services').selectedOptions).map(option => option.value).join(', ');
       const date = document.getElementById('date').value;
       const message = `Hello, I would like to book a salon appointment.%0AName: ${name}%0APhone: ${phone}%0AServices: ${services}%0ADate: ${date}`;
-
-
-
       
-      const whatsappURL = `https://wa.me/917051189082?text=${message}`; // Replace XXXXXXXXXX with your WhatsApp number
+      const whatsappURL = `https://wa.me/917051189082?text=${message}`; 
 
       window.open(whatsappURL, '_blank');
     });
